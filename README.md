@@ -1,2 +1,3 @@
-# careem-searcher
-A Demo for a easy searcher, that combines the powerful use of RxSwift and the beaty of the React coding
+# Careem Searcher
+
+A Demo for a easy searcher, that combines the powerful use of RxSwift and the beauty of the React coding
