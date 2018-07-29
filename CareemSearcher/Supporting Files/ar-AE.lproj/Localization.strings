@@ -1,0 +1,10 @@
+/*
+ Localization.strings
+ CareemSearcher
+ 
+ Created by Kleiber Perez on 7/22/18.
+ 
+ */
+
+"requestError" = "حدث خطأ في طلبك ، يرجى المحاولة مرة أخرى في وقت لاحق";
+"serverError" = "نحن نقدم مشكلة على خوادمنا ، حاول مرة أخرى في وقت لاحق";

@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012464E820FBEF45009C02B4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 012464E520FBEF45009C02B4 /* LICENSE */; };
+		012464E820FBEF45009C02B4 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 012464E520FBEF45009C02B4 /* LICENSE.md */; };
 		012464EA20FBEF45009C02B4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 012464E720FBEF45009C02B4 /* README.md */; };
+		012464EF20FC566D009C02B4 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012464EE20FC566D009C02B4 /* Services.swift */; };
+		012464F120FC5A3B009C02B4 /* RequestEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012464F020FC5A3B009C02B4 /* RequestEntities.swift */; };
+		014C3841210DA63A00AA9EF6 /* IGListKit+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C3840210DA63A00AA9EF6 /* IGListKit+Rx.swift */; };
+		014C3843210DA65200AA9EF6 /* ScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C3842210DA65200AA9EF6 /* ScrollView+Rx.swift */; };
+		017B46322104552200297475 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 017B46342104552200297475 /* Localization.strings */; };
+		017B463C21055D8700297475 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B463B21055D8700297475 /* String+Localization.swift */; };
+		017B463E210562D400297475 /* LocalizableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B463D210562D400297475 /* LocalizableKeys.swift */; };
+		017B464121059FCD00297475 /* Array+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B464021059FCD00297475 /* Array+Encoding.swift */; };
+		017B46432105A0A500297475 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B46422105A0A500297475 /* Optional+Extension.swift */; };
+		017B46452105BA4100297475 /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B46442105BA4100297475 /* Data+Serialization.swift */; };
+		017B46492105CC7400297475 /* ServiceRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B46482105CC7400297475 /* ServiceRequestAdapter.swift */; };
+		017B464B2105CCD200297475 /* RequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B464A2105CCD200297475 /* RequestModels.swift */; };
 		017FFD1920FBDC11005B5834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017FFD1820FBDC11005B5834 /* AppDelegate.swift */; };
-		017FFD1B20FBDC11005B5834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017FFD1A20FBDC11005B5834 /* ViewController.swift */; };
-		017FFD1E20FBDC11005B5834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017FFD1C20FBDC11005B5834 /* Main.storyboard */; };
 		017FFD2120FBDC11005B5834 /* CareemSearcher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 017FFD1F20FBDC11005B5834 /* CareemSearcher.xcdatamodeld */; };
 		017FFD2320FBDC12005B5834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017FFD2220FBDC12005B5834 /* Assets.xcassets */; };
 		017FFD2620FBDC12005B5834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017FFD2420FBDC12005B5834 /* LaunchScreen.storyboard */; };
@@ -31,12 +41,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		012464E520FBEF45009C02B4 /* LICENSE */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		012464E520FBEF45009C02B4 /* LICENSE.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		012464E720FBEF45009C02B4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		012464EE20FC566D009C02B4 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		012464F020FC5A3B009C02B4 /* RequestEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEntities.swift; sourceTree = "<group>"; };
+		012464F220FC5B55009C02B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		014C3840210DA63A00AA9EF6 /* IGListKit+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IGListKit+Rx.swift"; sourceTree = "<group>"; };
+		014C3842210DA65200AA9EF6 /* ScrollView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrollView+Rx.swift"; sourceTree = "<group>"; };
+		017B46332104552200297475 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
+		017B46352104552900297475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localization.strings; sourceTree = "<group>"; };
+		017B463B21055D8700297475 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		017B463D210562D400297475 /* LocalizableKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableKeys.swift; sourceTree = "<group>"; };
+		017B463F21056C7800297475 /* ar-AE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-AE"; path = "ar-AE.lproj/Localization.strings"; sourceTree = "<group>"; };
+		017B464021059FCD00297475 /* Array+Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Encoding.swift"; sourceTree = "<group>"; };
+		017B46422105A0A500297475 /* Optional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
+		017B46442105BA4100297475 /* Data+Serialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Serialization.swift"; sourceTree = "<group>"; };
+		017B46482105CC7400297475 /* ServiceRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestAdapter.swift; sourceTree = "<group>"; };
+		017B464A2105CCD200297475 /* RequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModels.swift; sourceTree = "<group>"; };
 		017FFD1520FBDC11005B5834 /* CareemSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareemSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		017FFD1820FBDC11005B5834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		017FFD1A20FBDC11005B5834 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		017FFD1D20FBDC11005B5834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		017FFD2020FBDC11005B5834 /* CareemSearcher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CareemSearcher.xcdatamodel; sourceTree = "<group>"; };
 		017FFD2220FBDC12005B5834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		017FFD2520FBDC12005B5834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,10 +98,71 @@
 		012464E420FBEF2C009C02B4 /* CareemMetadata */ = {
 			isa = PBXGroup;
 			children = (
-				012464E520FBEF45009C02B4 /* LICENSE */,
+				012464E520FBEF45009C02B4 /* LICENSE.md */,
 				012464E720FBEF45009C02B4 /* README.md */,
 			);
 			path = CareemMetadata;
+			sourceTree = "<group>";
+		};
+		012464EB20FC5595009C02B4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				017B463A21055D7400297475 /* Foundation */,
+				012464ED20FC55A4009C02B4 /* UI */,
+				012464EC20FC559E009C02B4 /* Services */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		012464EC20FC559E009C02B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				012464EE20FC566D009C02B4 /* Services.swift */,
+				012464F020FC5A3B009C02B4 /* RequestEntities.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		012464ED20FC55A4009C02B4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				014C3840210DA63A00AA9EF6 /* IGListKit+Rx.swift */,
+				014C3842210DA65200AA9EF6 /* ScrollView+Rx.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		017B462F2104547F00297475 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				017FFD2220FBDC12005B5834 /* Assets.xcassets */,
+				017FFD2420FBDC12005B5834 /* LaunchScreen.storyboard */,
+				017FFD2720FBDC12005B5834 /* Info.plist */,
+				017FFD1F20FBDC11005B5834 /* CareemSearcher.xcdatamodeld */,
+				017B46342104552200297475 /* Localization.strings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		017B463A21055D7400297475 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				017B463B21055D8700297475 /* String+Localization.swift */,
+				017B463D210562D400297475 /* LocalizableKeys.swift */,
+				017B464021059FCD00297475 /* Array+Encoding.swift */,
+				017B46422105A0A500297475 /* Optional+Extension.swift */,
+				017B46442105BA4100297475 /* Data+Serialization.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		017B46462105C8F900297475 /* Assemblers */ = {
+			isa = PBXGroup;
+			children = (
+				017B46482105CC7400297475 /* ServiceRequestAdapter.swift */,
+				017B464A2105CCD200297475 /* RequestModels.swift */,
+			);
+			path = Assemblers;
 			sourceTree = "<group>";
 		};
 		017FFD0C20FBDC11005B5834 = {
@@ -106,12 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				017FFD1820FBDC11005B5834 /* AppDelegate.swift */,
-				017FFD1A20FBDC11005B5834 /* ViewController.swift */,
-				017FFD1C20FBDC11005B5834 /* Main.storyboard */,
-				017FFD2220FBDC12005B5834 /* Assets.xcassets */,
-				017FFD2420FBDC12005B5834 /* LaunchScreen.storyboard */,
-				017FFD2720FBDC12005B5834 /* Info.plist */,
-				017FFD1F20FBDC11005B5834 /* CareemSearcher.xcdatamodeld */,
+				017B462F2104547F00297475 /* Supporting Files */,
+				017B46462105C8F900297475 /* Assemblers */,
+				012464EB20FC5595009C02B4 /* Utils */,
 			);
 			path = CareemSearcher;
 			sourceTree = "<group>";
@@ -139,6 +220,7 @@
 		AD1BBB6C04BCAE0CD5191888 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				012464F220FC5B55009C02B4 /* Foundation.framework */,
 				B98EE05A79ED557370DBDA21 /* Pods_CareemSearcher.framework */,
 				1150A47787DED8D449137E03 /* Pods_CareemSearcherTests.framework */,
 			);
@@ -212,6 +294,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"ar-AE",
 			);
 			mainGroup = 017FFD0C20FBDC11005B5834;
 			productRefGroup = 017FFD1620FBDC11005B5834 /* Products */;
@@ -231,9 +314,9 @@
 			files = (
 				012464EA20FBEF45009C02B4 /* README.md in Resources */,
 				017FFD2620FBDC12005B5834 /* LaunchScreen.storyboard in Resources */,
+				017B46322104552200297475 /* Localization.strings in Resources */,
 				017FFD2320FBDC12005B5834 /* Assets.xcassets in Resources */,
-				012464E820FBEF45009C02B4 /* LICENSE in Resources */,
-				017FFD1E20FBDC11005B5834 /* Main.storyboard in Resources */,
+				012464E820FBEF45009C02B4 /* LICENSE.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,16 +337,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CareemSearcher/Pods-CareemSearcher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCoreData/RxCoreData.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCoreData.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -316,6 +403,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CareemSearcherTests/Pods-CareemSearcherTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCoreData/RxCoreData.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -324,6 +413,8 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCoreData.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -342,9 +433,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				017B464121059FCD00297475 /* Array+Encoding.swift in Sources */,
+				017B46492105CC7400297475 /* ServiceRequestAdapter.swift in Sources */,
+				017B463E210562D400297475 /* LocalizableKeys.swift in Sources */,
 				017FFD2120FBDC11005B5834 /* CareemSearcher.xcdatamodeld in Sources */,
-				017FFD1B20FBDC11005B5834 /* ViewController.swift in Sources */,
 				017FFD1920FBDC11005B5834 /* AppDelegate.swift in Sources */,
+				017B46452105BA4100297475 /* Data+Serialization.swift in Sources */,
+				014C3843210DA65200AA9EF6 /* ScrollView+Rx.swift in Sources */,
+				012464F120FC5A3B009C02B4 /* RequestEntities.swift in Sources */,
+				017B464B2105CCD200297475 /* RequestModels.swift in Sources */,
+				017B46432105A0A500297475 /* Optional+Extension.swift in Sources */,
+				012464EF20FC566D009C02B4 /* Services.swift in Sources */,
+				014C3841210DA63A00AA9EF6 /* IGListKit+Rx.swift in Sources */,
+				017B463C21055D8700297475 /* String+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,12 +468,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		017FFD1C20FBDC11005B5834 /* Main.storyboard */ = {
+		017B46342104552200297475 /* Localization.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				017FFD1D20FBDC11005B5834 /* Base */,
+				017B46332104552200297475 /* en */,
+				017B46352104552900297475 /* Base */,
+				017B463F21056C7800297475 /* ar-AE */,
 			);
-			name = Main.storyboard;
+			name = Localization.strings;
 			sourceTree = "<group>";
 		};
 		017FFD2420FBDC12005B5834 /* LaunchScreen.storyboard */ = {
@@ -391,6 +494,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -452,6 +556,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -510,7 +615,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = CareemSearcher/Info.plist;
+				INFOPLIST_FILE = "CareemSearcher/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,7 +637,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = CareemSearcher/Info.plist;
+				INFOPLIST_FILE = "CareemSearcher/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,10 +1,16 @@
 PODS:
+  - Alamofire (4.7.3)
   - IGListKit (3.4.0):
     - IGListKit/Default (= 3.4.0)
   - IGListKit/Default (3.4.0):
     - IGListKit/Diffing
   - IGListKit/Diffing (3.4.0)
   - Nuke (7.3)
+  - RxAlamofire (4.2.0):
+    - RxAlamofire/Core (= 4.2.0)
+  - RxAlamofire/Core (4.2.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4)
   - RxBlocking (4.2.0):
     - RxSwift (~> 4.0)
   - RxCocoa (4.2.0):
@@ -19,6 +25,7 @@ PODS:
 DEPENDENCIES:
   - IGListKit
   - Nuke
+  - RxAlamofire
   - RxBlocking
   - RxCocoa
   - RxCoreData
@@ -27,8 +34,10 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - IGListKit
     - Nuke
+    - RxAlamofire
     - RxBlocking
     - RxCocoa
     - RxCoreData
@@ -36,14 +45,16 @@ SPEC REPOS:
     - RxTest
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   Nuke: 3680b7186b18f84a5e9e283bfce4357bfd70fdf9
+  RxAlamofire: 87a9c588541210cc3e4a1f843ccc3ecf3eb98b31
   RxBlocking: e339d8a6e752e25ade95ff858466c55436668f59
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxCoreData: 3717ff29afb7261f8cff4b893ffb0650367d0fe6
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   RxTest: 8da864c0ee47534f586ff18fb0c7e5b2f1fe5023
 
-PODFILE CHECKSUM: 763abd221f005f05738d1f4529cf09f4e253c2ac
+PODFILE CHECKSUM: 80f9c6ad87d041ac3d6504526274573c00512b4b
 
 COCOAPODS: 1.5.3
