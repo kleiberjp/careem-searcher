@@ -5,14 +5,15 @@
 //  Created by Kleiber Perez on 7/23/18.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 import RxAlamofire
 import RxSwift
 
+//MARK: - Service Request Layer Default App
+
 class ServiceRequest {
     
-    //MARK: Private Methods
     private func process(request infoRequest: RequestType, onComplete complete: ((DataResponse<Any>)->Void)?) {
         let method = HTTPMethod(rawValue: infoRequest.method.rawValue) ?? .get
         let encoding = getEncoding(from: infoRequest)
@@ -38,13 +39,8 @@ class ServiceRequest {
     }
     
     private func handleSuccesResponse<T: Serializable>(with data: Any?, for model: T.Type) -> (model: T?, error: RequestErrorType?) {
-        do {
-            let info = try T(with: data)
-            return (info, nil)
-        } catch  {
-            let errorMapping = RequestError(status: .serializationFailed, info: data, message: error.localizedDescription)
-            return (nil, errorMapping)
-        }
+        let info = T(with: data)
+        return (info, nil)
     }
     
     private func handleError(at response: DataResponse<Any>) -> RequestErrorType? {
@@ -84,9 +80,11 @@ class ServiceRequest {
     }
 }
 
+//MARK: - Service Requests Handler Implementations
+
 extension ServiceRequest: ServiceRequestsHandler {
    
-    func execute<T>(request infoRequest: RequestType, for model: T.Type, onComplete complete: ((T?, RequestErrorType?) -> Void)?) where T : Serializable {
+    func execute<T: Serializable>(request infoRequest: RequestType, for model: T.Type, onComplete complete: ((T?, RequestErrorType?) -> Void)?) {
         process(request: infoRequest) { [weak self] response in
             let result = self?.handleResponse(response, for: model)
             complete?(result?.data, result?.error)

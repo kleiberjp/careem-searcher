@@ -7,18 +7,6 @@
 
 import Alamofire
 
-//MARK: - Entities generic for app
-
-/// Custom Error
-///
-/// Enums that contains all the posibles
-/// generic error founded above the app
-///
-
-enum CustomErrors: CustomNSError, LocalizedError {
-    case invalidData
-}
-
 // MARK: - Entities Request Service Layer
 
 //MARK: Request Status
@@ -78,12 +66,9 @@ enum RequestStatus: Int, RawRepresentable {
 /// A generic protocol for parse all the possible error
 /// response of a request
 ///
-protocol RequestErrorType: CustomNSError, LocalizedError {
-    var info: [String: Any] { get set }
-    var message: String? { get set }
+protocol RequestErrorType: CustomErrorType {
     var status: RequestStatus { get set }
     
-    init()
     init(status: RequestStatus, info: Any?)
     init(status: RequestStatus, info: Any?, message: String?)
 }
@@ -95,10 +80,8 @@ extension RequestErrorType {
     }
     
     init(status: RequestStatus, info: Any?, message: String?) {
-        self.init()
+        self.init(info: info, message: message)
         self.status = status
-        self.info = info as? [String: Any] ?? [:]
-        self.message = message
     }
 
     static var errorDomain: String {
@@ -107,16 +90,6 @@ extension RequestErrorType {
         
     var errorCode: Int {
         return status.rawValue
-    }
-    
-    var errorUserInfo: [String : Any] {
-        var errorInfo = [String: Any]()
-        if let messageInfo = message {
-            errorInfo[NSLocalizedDescriptionKey] = messageInfo
-        }
-        
-        errorInfo[NSLocalizedFailureReasonErrorKey] = info
-        return errorInfo
     }
     
     var errorDescription: String? {
@@ -161,7 +134,5 @@ protocol RequestType {
 ///
 ///Protocol for handle serialization model
 protocol Serializable {
-    associatedtype Model
-    init(with data: Any?) throws
+    init?(with data: Any?)
 }
-

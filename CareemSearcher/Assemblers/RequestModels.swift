@@ -6,8 +6,6 @@
 //
 
 import Alamofire
-import Foundation
-
 
 /// Request
 ///
